@@ -1,0 +1,63 @@
+@font-face {
+  font-family: Akijo;
+  src: url(/Akijo_Regular.otf);
+  font-weight: bold;
+}
+
+.menuButton {
+  display: none;
+  filter: invert(100%);
+}
+
+@media (max-width: 924px) {
+  .menuButton {
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    height: 52px;
+    width: 52px;
+  }
+
+  .modalContainer {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 32;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .mobileNav {
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+
+  .mobileNav a {
+    color: #ffffff;
+    font-size: large;
+    font-family: Akijo;
+    text-decoration: none;
+    margin-top: 8px;
+  }
+
+  .mobileNav a:hover {
+    text-decoration: underline;
+  }
+
+  .exitButton {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    height: 24px;
+    width: 24px;
+  }
+
+  .exitButton:hover {
+    cursor: pointer;
+  }
+}

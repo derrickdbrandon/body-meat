@@ -1,0 +1,80 @@
+@font-face {
+  font-family: Akijo;
+  src: url(/Akijo_Regular.otf);
+  font-weight: bold;
+}
+
+.logo {
+  height: 200px;
+  width: 200px;
+}
+
+.navWrapper {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.nav {
+  justify-self: end;
+}
+
+.nav a {
+  color: #ffffff;
+  font-size: large;
+  font-family: Akijo;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.links {
+  justify-self: start;
+}
+
+.links a {
+  margin: 0 12px;
+}
+
+.appleMusicLogo,
+.instagramLogo,
+.spotifyLogo,
+.youtubeLogo {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 1224px) {
+  .nav {
+    justify-self: center;
+  }
+
+  .nav a {
+    margin: 0 6px;
+  }
+
+  .links {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 924px) {
+  .nav {
+    display: none;
+  }
+
+  .links {
+    position: absolute;
+    top: 20px;
+  }
+
+  .logo {
+    display: none;
+  }
+}
