@@ -1,6 +1,6 @@
 import { useState } from "react";
-
 import styles from "../styles/MobileNav.module.css";
+import Link from "next/link";
 
 export default function MobileNav() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -22,18 +22,18 @@ export default function MobileNav() {
             <a href="https://bodymeat.bandcamp.com/" title="Body Meat Bandcamp">
               MUSIC
             </a>
-            <a href="/shows" title="List of all upcoming shows">
-              LIVE
-            </a>
+            <Link href="/shows">
+              <a title="List of all upcoming shows">LIVE</a>
+            </Link>
             <a
               href="https://thehyv.shop/collections/body-meat"
               title="Body Meat Merch Store"
             >
               STORE
             </a>
-            <a href="/contact" title="Contact Info Page">
-              CONTACT
-            </a>
+            <Link href="/contact">
+              <a title="Contact Info Page">CONTACT</a>
+            </Link>
           </nav>
           <img
             className={styles.exitButton}
