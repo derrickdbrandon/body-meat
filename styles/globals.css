@@ -30,15 +30,10 @@ body {
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  html,
-  body {
-    overflow-x: hidden;
-  }
-
+@media only screen and (min-device-width: 320px) and (max-device-width: 924px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   video {
     width: 100vw;
-    height: 100vh;
+    height: 400px;
     top: 0;
   }
 }
