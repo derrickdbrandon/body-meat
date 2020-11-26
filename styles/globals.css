@@ -19,3 +19,13 @@ body {
   background-color: black;
   color: white;
 }
+
+@media only screen and (max-width: 924px) {
+  video {
+    object-fit: cover;
+    width: 100vw;
+    height: 400px;
+    position: fixed;
+    top: 20%;
+  }
+}

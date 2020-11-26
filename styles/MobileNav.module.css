@@ -1,7 +1,6 @@
 @font-face {
-  font-family: Akijo;
-  src: url(/Akijo_Regular.otf);
-  font-weight: bold;
+  font-family: Helvetica Neue Light;
+  src: url(/HelveticaNeueLight.ttf);
 }
 
 .menuButton {
@@ -40,7 +39,7 @@
   .mobileNav a {
     color: #ffffff;
     font-size: large;
-    font-family: Akijo;
+    font-family: Helvetica Neue Light, Arial, sans-serif;
     text-decoration: none;
     margin-top: 8px;
   }
