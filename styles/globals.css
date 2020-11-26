@@ -14,12 +14,21 @@ video {
   left: 0;
 }
 
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+}
+
 html,
 body {
   height: 100%;
   background-color: black;
   color: white;
-  overflow: hidden;
 }
 
 @media only screen and (max-width: 924px) and (-webkit-min-device-pixel-ratio: 2) {
