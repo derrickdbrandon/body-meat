@@ -1,11 +1,19 @@
-@font-face {
-  font-family: Helvetica Neue Light;
-  src: url(/HelveticaNeueLight.ttf);
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .menuButton {
   display: none;
   filter: invert(100%);
+}
+
+.modalContainer {
+  display: none;
 }
 
 @media (max-width: 924px) {
@@ -14,12 +22,18 @@
     position: absolute;
     top: 6px;
     left: 6px;
-    height: 52px;
-    width: 52px;
+    height: 56px;
+    width: 56px;
   }
 
   .modalContainer {
+    display: block;
     position: relative;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.25s;
     background-color: rgba(0, 0, 0, 0.9);
     z-index: 32;
     height: 100vh;
@@ -28,7 +42,7 @@
 
   .mobileNav {
     position: fixed;
-    top: 35%;
+    top: 44%;
     left: 50%;
     display: flex;
     flex-direction: column;
@@ -39,7 +53,7 @@
   .mobileNav a {
     color: #ffffff;
     font-size: large;
-    font-family: Helvetica Neue Light, Arial, sans-serif;
+    font-family: Helvetica Neue Bold, Arial, sans-serif;
     text-decoration: none;
     margin-top: 8px;
   }

@@ -4,9 +4,17 @@
   height: 100vh;
 }
 
+.copyright {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-size: x-small;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
 .showsList {
   position: relative;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Helvetica Neue, Arial, sans-serif;
   font-weight: 100;
   text-align: center;
   padding-top: 100px;
@@ -16,7 +24,12 @@
 }
 
 @media (max-width: 924px) {
+  .copyright {
+    bottom: 16px;
+    left: 16px;
+  }
+
   .showsList {
-    top: 35%;
+    top: 40%;
   }
 }
