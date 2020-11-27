@@ -2,7 +2,7 @@ import { useState } from "react";
 import styles from "../styles/MobileNav.module.css";
 import Link from "next/link";
 
-export default function MobileNav() {
+export default function MobileNav({ displayHomeButton }) {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
@@ -34,6 +34,11 @@ export default function MobileNav() {
             <Link href="/contact">
               <a title="Contact Info Page">CONTACT</a>
             </Link>
+            {displayHomeButton ? (
+              <Link href="/">
+                <a title="Home">HOME</a>
+              </Link>
+            ) : null}
           </nav>
           <img
             className={styles.exitButton}
