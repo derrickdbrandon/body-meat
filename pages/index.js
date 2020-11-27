@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Body Meat</title>
+        <title>BODY MEAT</title>
         <meta name="Body Meat" content="Body Meat" />
         <meta name="Description" content="Body Meat Home Page"></meta>
         <link rel="icon" href="/logo.png" />
