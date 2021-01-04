@@ -17,7 +17,7 @@ export default function Home() {
         <meta name="Description" content="Body Meat Home Page"></meta>
         <link rel="icon" href="/logo.png" />
       </Head>
-      <video playsInline autoPlay muted={muted} loop poster="/poster.jp2">
+      <video playsInline autoPlay muted={muted} loop>
         <source src="/teaser.mp4" type="video/mp4" />
       </video>
       <MobileNav />
