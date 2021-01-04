@@ -27,25 +27,22 @@ export default function Nav() {
         </a>
       </Link>
       <div className={styles.links}>
-        <a>
+        <a href="https://music.apple.com/us/artist/body-meat/1441897617">
           <img
-            href="https://music.apple.com/us/artist/body-meat/1441897617"
             src="/apple.svg"
             alt="Apple Music"
             className={styles.appleMusicLogo}
           />
         </a>
-        <a>
+        <a href="https://open.spotify.com/artist/4BrSvpXSgT02JhhNULggJk">
           <img
-            href="https://open.spotify.com/artist/4BrSvpXSgT02JhhNULggJk"
             src="/spotify.png"
             alt="Spotify"
             className={styles.spotifyLogo}
           />
         </a>
-        <a>
+        <a href="https://www.youtube.com/channel/UCeFFP3mYQPzGqcbmj4__gDg">
           <img
-            href="https://www.youtube.com/channel/UCeFFP3mYQPzGqcbmj4__gDg"
             src="/youtube.png"
             alt="YouTube"
             className={styles.youtubeLogo}

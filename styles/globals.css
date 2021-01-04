@@ -18,6 +18,7 @@
 }
 
 video {
+  object-fit: cover;
   position: fixed;
   top: 50%;
   left: 50%;

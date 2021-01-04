@@ -82,8 +82,13 @@
   }
 
   .links {
-    position: absolute;
-    top: 20px;
+    position: fixed;
+    top: 34px;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
   }
 
   .logo {
