@@ -22,7 +22,7 @@ export default function Contact() {
           <div className={styles.email}>john@groundcontroltouring.com</div>
         </div>
       </div>
-      <div className={styles.copyright}>© 2020 Body Meat</div>
+      <div className={styles.copyright}>© 2021 Body Meat</div>
     </>
   );
 }

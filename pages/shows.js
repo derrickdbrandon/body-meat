@@ -17,7 +17,7 @@ export default function Shows() {
         <MobileNav displayHomeButton />
         <div className={styles.showsList}>No Shows Scheduled</div>
       </div>
-      <div className={styles.copyright}>© 2020 Body Meat</div>
+      <div className={styles.copyright}>© 2021 Body Meat</div>
     </>
   );
 }

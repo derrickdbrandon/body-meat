@@ -13,15 +13,20 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 video {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: auto;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 html,
@@ -35,15 +40,6 @@ body {
 @media only screen and (max-width: 924px) and (-webkit-min-device-pixel-ratio: 2) {
   video {
     width: 100vw;
-    height: 400px;
-    top: 16%;
-  }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 924px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  video {
-    width: 100vw;
-    height: 400px;
-    top: 0;
+    height: auto;
   }
 }
