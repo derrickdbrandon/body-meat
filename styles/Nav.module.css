@@ -89,6 +89,11 @@
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
+    white-space: nowrap;
+  }
+
+  .links a {
+    margin: 0 8px;
   }
 
   .logo {
