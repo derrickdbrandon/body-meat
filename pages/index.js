@@ -1,8 +1,10 @@
 import Head from "next/head";
 import { useState } from "react";
 import styles from "../styles/Home.module.css";
-import MobileNav from "./mobileNav";
-import Nav from "./nav";
+import dynamic from "next/dynamic";
+
+const MobileNav = dynamic(() => import("./mobileNav"));
+const Nav = dynamic(() => import("./nav"));
 
 export default function Home() {
   const [muted, setMuted] = useState(true);
@@ -15,7 +17,7 @@ export default function Home() {
         <meta name="Description" content="Body Meat Home Page"></meta>
         <link rel="icon" href="/logo.png" />
       </Head>
-      <video playsInline autoPlay muted={muted} loop poster="/poster.jpeg">
+      <video playsInline autoPlay muted={muted} loop poster="/poster.jp2">
         <source src="/teaser.mp4" type="video/mp4" />
       </video>
       <MobileNav />
