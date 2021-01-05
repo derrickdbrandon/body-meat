@@ -1,9 +1,16 @@
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .muteButton {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  height: 24px;
-  width: 24px;
 }
 
 .muteButton:hover {
@@ -16,6 +23,10 @@
   position: absolute;
   bottom: 20px;
   left: 20px;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
 }
 
 @media (max-width: 924px) {

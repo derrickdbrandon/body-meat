@@ -24,6 +24,10 @@
     left: 6px;
     height: 56px;
     width: 56px;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
   }
 
   .modalContainer {
