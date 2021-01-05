@@ -1,9 +1,11 @@
 @font-face {
+  font-display: swap;
   font-family: Helvetica Neue;
   src: url(/HelveticaNeue.ttf);
 }
 
 @font-face {
+  font-display: swap;
   font-family: Helvetica Neue Bold;
   src: url(/HelveticaNeueBold.ttf);
 }
