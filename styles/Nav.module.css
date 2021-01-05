@@ -7,11 +7,6 @@
   }
 }
 
-.logo {
-  height: 200px;
-  width: 200px;
-}
-
 .navWrapper {
   position: relative;
   display: grid;
@@ -51,14 +46,6 @@
 
 .links a:hover {
   cursor: pointer;
-}
-
-.appleMusicLogo,
-.instagramLogo,
-.spotifyLogo,
-.youtubeLogo {
-  width: 24px;
-  height: 24px;
 }
 
 @media (max-width: 1224px) {
