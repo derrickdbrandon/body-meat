@@ -1,10 +1,10 @@
 import Head from "next/head";
 import { useState } from "react";
 import styles from "../styles/Home.module.css";
+import Nav from "./nav";
 import dynamic from "next/dynamic";
 
 const MobileNav = dynamic(() => import("./mobileNav"));
-const Nav = dynamic(() => import("./nav"));
 
 export default function Home() {
   const [muted, setMuted] = useState(true);
