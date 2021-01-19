@@ -11,10 +11,7 @@ export default function Nav() {
         <Link href="/shows">
           <a title="List of all upcoming shows">LIVE</a>
         </Link>
-        <a
-          href="https://thehyv.shop/collections/body-meat"
-          title="Body Meat Merch Store"
-        >
+        <a href="https://bodymeat.bandcamp.com/" title="Body Meat Merch Store">
           STORE
         </a>
         <Link href="/contact">

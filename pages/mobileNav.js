@@ -26,7 +26,7 @@ export default function MobileNav({ displayHomeButton }) {
               <a title="List of all upcoming shows">LIVE</a>
             </Link>
             <a
-              href="https://thehyv.shop/collections/body-meat"
+              href="https://bodymeat.bandcamp.com/"
               title="Body Meat Merch Store"
             >
               STORE
