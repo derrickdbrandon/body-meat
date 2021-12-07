@@ -22,8 +22,8 @@ export default function MobileNav({ displayHomeButton }) {
             <a href="https://bodymeat.bandcamp.com/" title="Body Meat Bandcamp">
               MUSIC
             </a>
-            <Link href="/shows">
-              <a title="List of all upcoming shows">LIVE</a>
+            <Link href="https://www.songkick.com/artists/8946444-body-meat/calendar">
+              <a title="Link to all upcoming shows">LIVE</a>
             </Link>
             <a
               href="https://bodymeat.bandcamp.com/"
