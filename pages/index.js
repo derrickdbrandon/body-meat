@@ -37,7 +37,7 @@ export default function Home() {
           onClick={() => setMuted(true)}
         />
       )}
-      <div className={styles.copyright}>© 2021 Body Meat</div>
+      <div className={styles.copyright}>© {new Date().getFullYear()} Body Meat</div>
     </>
   );
 }
