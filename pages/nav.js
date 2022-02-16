@@ -8,7 +8,7 @@ export default function Nav() {
         <a href="https://bodymeat.bandcamp.com/" title="Body Meat Bandcamp">
           MUSIC
         </a>
-        <Link href="https://www.songkick.com/artists/8946444-body-meat/calendar">
+        <Link href="http://www.groundcontroltouring.com/tours/body-meat">
           <a title="Link of all upcoming shows">LIVE</a>
         </Link>
         <a href="https://bodymeat.bandcamp.com/" title="Body Meat Merch Store">
