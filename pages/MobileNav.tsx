@@ -1,8 +1,12 @@
-import { useState } from "react";
-import styles from "../styles/MobileNav.module.css";
+import { ReactElement, useState } from "react";
 import Link from "next/link";
+import styles from "../styles/MobileNav.module.css";
 
-export default function MobileNav({ displayHomeButton }) {
+const MobileNav = ({
+  displayHomeButton,
+}: {
+  displayHomeButton?: boolean;
+}): ReactElement => {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
@@ -19,15 +23,27 @@ export default function MobileNav({ displayHomeButton }) {
           onClick={() => setModalOpen(false)}
         >
           <nav className={styles.mobileNav}>
-            <a href="https://bodymeat.bandcamp.com/" title="Body Meat Bandcamp">
+            <a
+              href="https://bodymeat.bandcamp.com/"
+              title="Body Meat Bandcamp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               MUSIC
             </a>
-            <Link href="http://www.groundcontroltouring.com/tours/body-meat">
-              <a title="Link to all upcoming shows">LIVE</a>
-            </Link>
+            <a
+              href="http://www.groundcontroltouring.com/tours/body-meat"
+              title="Link to all upcoming shows"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LIVE
+            </a>
             <a
               href="https://bodymeat.bandcamp.com/"
               title="Body Meat Merch Store"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               STORE
             </a>
@@ -50,4 +66,6 @@ export default function MobileNav({ displayHomeButton }) {
       ) : null}
     </>
   );
-}
+};
+
+export default MobileNav;

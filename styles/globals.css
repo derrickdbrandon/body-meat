@@ -10,6 +10,15 @@
   src: url(/HelveticaNeueBold.ttf);
 }
 
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -42,5 +51,24 @@ body {
   video {
     height: 100vh;
     width: auto;
+  }
+}
+
+.copyright {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-size: x-small;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 250ms;
+}
+
+@media (max-width: 924px) {
+  .copyright {
+    bottom: 16px;
+    left: 16px;
   }
 }
